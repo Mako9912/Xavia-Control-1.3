@@ -8,7 +8,6 @@ function App() {
     <div className="flex">
       <div className="basis-[12%] h-[100vh] ">
         {" "}
-        <h1>Cambios de pureba</h1>
         <Sidebar />
       </div>
       <div className="basis-[88%] border">
