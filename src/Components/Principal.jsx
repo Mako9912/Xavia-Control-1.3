@@ -113,7 +113,7 @@ const Principal = () => {
           <FaRegCalendarMinus fontSize={20} color="" />
         </div>
       </div>
-      <div className="flex mt-[22px] w-full gap-[30px]" >
+      <div className="flex mt-[22px] w-full gap-[30px]">
         <div className="basis-[70%]">
           <LineChart
             width={500}
@@ -140,9 +140,7 @@ const Principal = () => {
             <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
           </LineChart>
         </div>
-        <div className="basis-[30%]">
-
-        </div>
+        <div className="basis-[30%]"></div>
       </div>
     </div>
   );
