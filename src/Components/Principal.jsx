@@ -9,49 +9,51 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { FaRegCalendarMinus } from "react-icons/fa";
+import { FaEllipsisV, FaRegCalendarMinus } from "react-icons/fa";
+import PieComponent from "./PieComponent";
+import { Progress } from "antd";
 
 const data = [
   {
     name: "Page A",
-    uv: 4000,
-    pv: 2400,
+    uv: 50,
+    pv: 20,
     amt: 2400,
   },
   {
     name: "Page B",
-    uv: 3000,
-    pv: 1398,
+    uv: 25,
+    pv: 30,
     amt: 2210,
   },
   {
     name: "Page C",
-    uv: 2000,
-    pv: 9800,
+    uv: 10,
+    pv: 15,
     amt: 2290,
   },
   {
     name: "Page D",
-    uv: 2780,
-    pv: 3908,
+    uv: 70,
+    pv: 18,
     amt: 2000,
   },
   {
     name: "Page E",
-    uv: 1890,
-    pv: 4800,
+    uv: 22,
+    pv: 55,
     amt: 2181,
   },
   {
     name: "Page F",
-    uv: 2390,
-    pv: 3800,
+    uv: 83,
+    pv: 46,
     amt: 2500,
   },
   {
     name: "Page G",
-    uv: 3490,
-    pv: 4300,
+    uv: 12,
+    pv: 16,
     amt: 2100,
   },
 ];
@@ -67,7 +69,18 @@ const Principal = () => {
           Generate Report
         </button>
       </div>
-      <div className="grid grid-cols-4 gap-[30px] mt-[25px] pb-[15px]">
+      <div className="grid grid-cols-7 gap-[30px] mt-[25px] pb-[15px]">
+        <div className="h-[50px] rounde-[8px] bg-white border-l-[4px]  border-r-[4px] border-[#4E73DF] flex items-center  justify-between px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out rounded-[10px]">
+          <div>
+            <h2 className="text-[#B589DF] text-[11px] leading-[17px] font-bold">
+              Earning (Monthly)
+            </h2>
+            <h1 className="text-[15px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]">
+              #40,000
+            </h1>
+          </div>
+          <FaRegCalendarMinus fontSize={20} color="" />
+        </div>
         <div className="h-[50px] rounde-[8px] bg-white border-l-[4px]  border-r-[4px] border-[#4E73DF] flex items-center  justify-between px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out rounded-[10px]">
           <div>
             <h2 className="text-[#B589DF] text-[11px] leading-[17px] font-bold">
@@ -112,35 +125,89 @@ const Principal = () => {
           </div>
           <FaRegCalendarMinus fontSize={20} color="" />
         </div>
+        <div className="h-[50px] rounde-[8px] bg-white border-l-[4px]   border-r-[4px] border-[#4E73DF] flex items-center  justify-between px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out rounded-[15px]">
+          <div>
+            <h2 className="text-[#B589DF] text-[11px] leading-[17px] font-bold">
+              Earning (Monthly)
+            </h2>
+            <h1 className="text-[15px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]">
+              #40,000
+            </h1>
+          </div>
+          <FaRegCalendarMinus fontSize={20} color="" />
+        </div>
+        <div className="h-[50px] rounde-[8px] bg-white border-l-[4px]   border-r-[4px] border-[#4E73DF] flex items-center  justify-between px-[30px] cursor-pointer hover:shadow-lg transform hover:scale-[103%] transition duration-300 ease-out rounded-[15px]">
+          <div>
+            <h2 className="text-[#B589DF] text-[11px] leading-[17px] font-bold">
+              Earning (Monthly)
+            </h2>
+            <h1 className="text-[15px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]">
+              #40,000
+            </h1>
+          </div>
+          <FaRegCalendarMinus fontSize={20} color="" />
+        </div>
       </div>
       <div className="flex mt-[22px] w-full gap-[30px]">
-        <div className="basis-[70%]">
-          <LineChart
-            width={500}
-            height={220}
-            data={data}
-            margin={{
-              top: 5,
-              right: 30,
-              left: 20,
-              bottom: 5,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Line
-              type="monotone"
-              dataKey="pv"
-              stroke="#8884d8"
-              activeDot={{ r: 8 }}
-            />
-            <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-          </LineChart>
+        <div className="basis-[10%] border bg-white shadow-md cursor-pointer roundes-[4px] ">
+          <div className=" bg-[#F8F9FC] flex items-center justify-between py-[15px] px-[20px] border-b-[1px] border-[#EDEDED] mb-[20px] ">
+            <h2>Densidad Semanal De Estudios</h2>
+            <FaEllipsisV color="gray" className="cursor-pointer" />
+          </div>
+          <div className>
+            <LineChart
+              width={800}
+              height={300}
+              data={data}
+              margin={{
+                top: 5,
+                right: 30,
+                left: 20,
+                bottom: 5,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              <Line
+                type="bump"
+                dataKey="pv"
+                stroke="#8884d8"
+                activeDot={{ r: 8 }}
+              />
+              <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+            </LineChart>
+          </div>
         </div>
-        <div className="basis-[30%]"></div>
+        <div className="basis-[30%] border-white shadow-md cursor-pointer rounded-[4px] ">
+          <div className="bg-[#F8F9FC] flex items-center justify-between py-[10px] px-[20px] border-b-[1px] border-[#EDEDED] ">
+            <h2>Almacenamiento</h2>
+            <FaEllipsisV color="gray" className="cursor-pointer" />
+          </div>
+          <div className="pl-[25px] py-[5px]">
+            <PieComponent />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div className="flex mt-[22px] w-full gap-[3px]">
+          <div className="basis-[55%] border bg-white shadow-md cursor-pointer rounded-[4px]">
+            <div className="bg-[#F8F9FC] flex flex-item-center justify-between py-[15px] px-[20px] border-b-[1px] border-[#EDEDE]">
+              <h2>Progeso Almacenamiento</h2>
+              <FaEllipsisV color="gray" className="cursor-pointer" />
+            </div>
+            <div className="px-[25px] space-y-[15px] py-[15px]">
+              <h2>Almacenamiento Restante esta semana</h2>
+              <Progress percent={30} strokeColor="#E74A3B" />
+            </div>
+          </div>
+          <div className="basis-[45%] border">
+            <h2>Cola De Estudios</h2>
+          </div>
+        </div>
       </div>
     </div>
   );

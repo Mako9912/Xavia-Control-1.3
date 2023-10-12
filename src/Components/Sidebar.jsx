@@ -83,19 +83,21 @@ const Sidebar = () => {
         </div>
       </div>
 
-      
-        <div className="flex items-center justify-center pt-[10px]">
-            <div className="h-[20px] w-[20px] bg-[#3C5EC1] rounded-full flex items-center justify-center cursor-pointer" >
-            <FaChevronLeft color="white"/>
-            </div>
+      <div className="flex items-center justify-center pt-[10px]">
+        <div className="h-[20px] w-[20px] bg-[#3C5EC1] rounded-full flex items-center justify-center cursor-pointer">
+          <FaChevronLeft color="white" />
         </div>
-        <div className="bg-[#395CBF] mt-[15px] flex items-center justify-center flex-col  py-[10px] px-[10px] gap-[15px] rounded-[3px] ">
-       <FaBolt color="white"/>
-       <p className=" text-[15px] leading-[18px] font-normal text-white/[0.4]">Actualice esta talla para pro </p>
-       <button className="bg-green-600 text-white flex items-center justify-center h-[30px] w-full  rounded-[3px] text-[14px] leading-[21px] font-normal" > Upgrade to Pro</button>
-        </div>
-      
-
+      </div>
+      <div className="bg-[#395CBF] mt-[15px] flex items-center justify-center flex-col  py-[10px] px-[10px] gap-[15px] rounded-[3px] ">
+        <FaBolt color="white" />
+        <p className=" text-[15px] leading-[18px] font-normal text-white/[0.4]">
+          Actualice esta talla para pro{" "}
+        </p>
+        <button className="bg-green-600 text-white flex items-center justify-center h-[30px] w-full  rounded-[3px] text-[14px] leading-[21px] font-normal">
+          {" "}
+          Upgrade to Pro
+        </button>
+      </div>
     </div>
   );
 };
