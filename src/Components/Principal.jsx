@@ -196,12 +196,26 @@ const Principal = () => {
         <div className="flex mt-[22px] w-full gap-[3px]">
           <div className="basis-[55%] border bg-white shadow-md cursor-pointer rounded-[4px]">
             <div className="bg-[#F8F9FC] flex flex-item-center justify-between py-[15px] px-[20px] border-b-[1px] border-[#EDEDE]">
-              <h2>Progeso Almacenamiento</h2>
+              <h2 className="text-[#4e73df] text-[16px] leading-[19px] font-bold">
+                Progeso Almacenamiento
+              </h2>
               <FaEllipsisV color="gray" className="cursor-pointer" />
             </div>
             <div className="px-[25px] space-y-[15px] py-[15px]">
               <h2>Almacenamiento Restante esta semana</h2>
               <Progress percent={30} strokeColor="#E74A3B" />
+            </div>
+            <div className="px-[25px] space-y-[15px] py-[15px]">
+              <h2>Almacenamiento Restante este Mes</h2>
+              <Progress percent={30} status="active" strokeColor="#F6C23E" />
+            </div>
+            <div className="px-[25px] space-y-[15px] py-[15px]">
+              <h2>Almacenamiento Restante Servidor</h2>
+              <Progress percent={100} status="active" strokeColor="#4E73DF" />
+            </div>
+            <div className="px-[25px] space-y-[15px] py-[15px]">
+              <h2>Poner algo mas</h2>
+              <Progress percent={50} status="exception" strokeColor="#1CC88A" />
             </div>
           </div>
           <div className="basis-[45%] border">
