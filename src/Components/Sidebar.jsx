@@ -82,12 +82,14 @@ const Sidebar = () => {
           <FaChevronRight color="white" />
         </div>
       </div>
-
+      {/* 
       <div className="flex items-center justify-center pt-[10px]">
         <div className="h-[20px] w-[20px] bg-[#3C5EC1] rounded-full flex items-center justify-center cursor-pointer">
           <FaChevronLeft color="white" />
         </div>
       </div>
+       !Boton para mas opciones
+      
       <div className="bg-[#395CBF] mt-[15px] flex items-center justify-center flex-col  py-[10px] px-[10px] gap-[15px] rounded-[3px] ">
         <FaBolt color="white" />
         <p className=" text-[15px] leading-[18px] font-normal text-white/[0.4]">
@@ -97,7 +99,7 @@ const Sidebar = () => {
           {" "}
           Upgrade to Pro
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };
