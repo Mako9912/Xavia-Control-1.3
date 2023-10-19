@@ -98,10 +98,10 @@ const Principal = () => {
         <div className="xl:h-[50px] rounde-[8px] bg-white border-l-[4px]   border-r-[4px] border-[#4E73DF] flex items-center  justify-between px-[30px] cursor-pointer hover:shadow-xl transform hover:scale-[103%] transition duration-300 ease-out rounded-[15px]">
           <div>
             <h2 className="xl:text-[#B589DF] text-[11px] leading-[17px] font-bold">
-              Earning (Monthly)
+              Rayos X
             </h2>
             <h1 className="xl:text-[15px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]">
-              #40,000
+              5656
             </h1>
           </div>
           <FaRegCalendarMinus fontSize={20} color="" />
@@ -109,10 +109,10 @@ const Principal = () => {
         <div className="xl:h-[50px] rounde-[8px] bg-white border-l-[4px]   border-r-[4px] border-[#4E73DF] flex items-center  justify-between px-[30px] cursor-pointer hover:shadow-xl transform hover:scale-[103%] transition duration-300 ease-out rounded-[15px]">
           <div>
             <h2 className="xl:text-[#B589DF] text-[11px] leading-[17px] font-bold">
-              Earning (Monthly)
+              Resonancia Magnetica
             </h2>
             <h1 className="xl:text-[15px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]">
-              #40,000
+              32088
             </h1>
           </div>
           <FaRegCalendarMinus fontSize={20} color="" />
@@ -148,10 +148,10 @@ const Principal = () => {
         <div className="xl:h-[50px] rounde-[8px] bg-white border-l-[4px]   border-r-[4px] border-[#4E73DF] flex items-center  justify-between px-[30px] cursor-pointer hover:shadow-xl transform hover:scale-[103%] transition duration-300 ease-out rounded-[15px]">
           <div>
             <h2 className="xl:text-[#B589DF] text-[11px] leading-[17px] font-bold">
-              Earning (Monthly)
+              Rayos X
             </h2>
             <h1 className="xl:text-[15px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]">
-              #40,000
+              15
             </h1>
           </div>
           <FaRegCalendarMinus fontSize={20} color="" />
@@ -159,10 +159,10 @@ const Principal = () => {
         <div className="xl:h-[50px] rounde-[8px] bg-white border-l-[4px]   border-r-[4px] border-[#4E73DF] flex items-center  justify-between px-[30px] cursor-pointer hover:shadow-xl transform hover:scale-[103%] transition duration-300 ease-out rounded-[15px]">
           <div>
             <h2 className="xl:text-[#B589DF] text-[11px] leading-[17px] font-bold">
-              Earning (Monthly)
+              Resonancia magnetica
             </h2>
             <h1 className="xl:text-[15px] leading-[24px] font-bold text-[#5a5c69] mt-[5px]">
-              #40,000
+              22
             </h1>
           </div>
           <FaRegCalendarMinus fontSize={20} color="" />
