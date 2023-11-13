@@ -5,11 +5,13 @@ import { Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex">
-      <div className="basis-[12%] h-screen">
+    <div className="h-screen">
+      {/*<div className="basis-[12%] h-screen">
         <Sidebar />
-      </div>
-      <div className="basis-[88%] border h-[100vh] overflow-scroll">
+      </div>   */}
+
+      {/* <div className="basis-[88%] border h-[100vh] overflow-scroll"> */}
+      <div className="">
         <Dashboardview />
         <div>
           <Outlet></Outlet>

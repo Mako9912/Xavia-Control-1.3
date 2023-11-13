@@ -3,8 +3,8 @@ import React from "react";
 import { PieChart, pieArcClasses } from "@mui/x-charts/PieChart";
 
 const data = [
-  { id: 0, value: 10, label: "Disponible" },
-  { id: 1, value: 15, label: "Ocupado" },
+  { id: 0, value: 25, label: "Disponible" },
+  { id: 1, value: 80, label: "Ocupado" },
 ];
 
 const PieComponent2 = () => {
@@ -12,7 +12,7 @@ const PieComponent2 = () => {
     <PieChart
       series={[
         {
-          arcLabel: (item) => `${item.label} (${item.value})`,
+          arcLabel: (item) => `${item.label} `,
           arcLabelMinAngle: 45,
 
           data,

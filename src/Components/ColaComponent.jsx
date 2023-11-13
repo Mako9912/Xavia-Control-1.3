@@ -6,8 +6,8 @@ import TableCell from "@mui/material/TableCell";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 // Generate Order Data
-function createData(id, date, name, shipTo, paymentMethod, amount) {
-  return { id, date, name, shipTo, paymentMethod, amount };
+function createData(id, date, name, historia, estudio) {
+  return { id, date, name, historia, estudio };
 }
 
 const rows = [
@@ -15,41 +15,41 @@ const rows = [
     0,
     "16 Mar, 2019",
     "Elvis Presley",
-    "Tupelo, MS",
-    "VISA ⠀•••• 3719",
-    312.44
+    "176H1231",
+    "Rayos X",
+    "VISA ⠀•••• 3719"
   ),
   createData(
     1,
     "16 Mar, 2019",
     "Paul McCartney",
-    "London, UK",
-    "VISA ⠀•••• 2574",
-    866.99
+    "176H1232",
+    "Tomografia",
+    "VISA ⠀•••• 2574"
   ),
   createData(
     2,
     "16 Mar, 2019",
     "Tom Scholz",
-    "Boston, MA",
-    "MC ⠀•••• 1253",
-    100.81
+    "176H1233",
+    "Ecografia",
+    "MC ⠀•••• 1253"
   ),
   createData(
     3,
     "16 Mar, 2019",
     "Michael Jackson",
-    "Gary, IN",
-    "AMEX ⠀•••• 2000",
-    654.39
+    "176H1234",
+    "Rayos X",
+    "AMEX ⠀•••• 2000"
   ),
   createData(
     4,
     "15 Mar, 2019",
     "Bruce Springsteen",
-    "Long Branch, NJ",
-    "VISA ⠀•••• 5919",
-    212.79
+    "176H1235",
+    "Tomografia",
+    "VISA ⠀•••• 5919"
   ),
 ];
 function preventDefault(event) {
@@ -59,15 +59,14 @@ function preventDefault(event) {
 const ColaComponent = () => {
   return (
     <div>
-      <h2> Ultimos Estudios </h2>
+      <h2> Últimos Estudios </h2>
       <Table size="small">
         <TableHead>
           <TableRow>
-            <TableCell>Date</TableCell>
-            <TableCell>Name</TableCell>
-            <TableCell>Ship To</TableCell>
-            <TableCell>Payment Method</TableCell>
-            <TableCell align="right">Sale Amount</TableCell>
+            <TableCell>Fehca</TableCell>
+            <TableCell>Nombre</TableCell>
+            <TableCell>Historia</TableCell>
+            <TableCell>Estudio</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -75,15 +74,14 @@ const ColaComponent = () => {
             <TableRow key={row.id}>
               <TableCell>{row.date}</TableCell>
               <TableCell>{row.name}</TableCell>
-              <TableCell>{row.shipTo}</TableCell>
-              <TableCell>{row.paymentMethod}</TableCell>
-              <TableCell align="right">{`$${row.amount}`}</TableCell>
+              <TableCell>{row.historia}</TableCell>
+              <TableCell>{row.estudio}</TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
       <Link to={"Estudios"} className="link-2">
-        See more orders
+        Ver más estudios
       </Link>
     </div>
   );
